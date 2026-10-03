@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!-- MATERIAL DE ICONS -->
+    <link rel="stylesheet" href="estilos/style.css"> <!-- MOBILE FIRST -->
+    <link rel="stylesheet" href="estilos/media-query.css"> <!-- OUTRAS MEDIA -->
 </head>
 <body>
     <main>
-        <section id="login" >
+        <section id="login" > <!-- TELA DE LOGIN -->
+
             <div id="imagem" >
-                
+                <!-- IMAGEM -->
             </div>
+            
             <div id="formulario" >
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta </p>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta.</p>
 
-                <form action="login.php" method="post" autocomplete="on" >
+                <form action="login.php" method="post" autocomplete="on" > <!-- FORMULARIO -->
+
                     <div class="campo" >
 
-                        <span class="material-symbols-outlined" >person</span>
+                        <span class="material-symbols-outlined" >person</span> <!--ICON -->
 
                         <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" required autocomplete="email" maxlength="30"  >
                         <label for="ilogin">Login</label>
@@ -30,7 +33,7 @@
                         
                     <div class="campo">
 
-                        <span class="material-symbols-outlined" >key</span>
+                        <span class="material-symbols-outlined" >key</span> <!--ICON -->
 
                         <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required  autocomplete="current-password" minlength="8"  maxlength="20" >
                         <label for="isenha">Senha</label>
@@ -38,9 +41,12 @@
                     </div>
 
                     <input type="submit" value="Entrar">
-                    <a href="esqueci.html" class="botao" >
+
+                    <a href="esqueci.html" class="botao" > <!-- BOTAO ESQUECI SENHA -->
                         Esqueci a senha <span class="material-symbols-outlined" >mail</span>
                     </a>
+
+                    <p id="cred" >Feito por Khayo Furquim Gomes.</p>
                 </form>
             </div>
         </section>

@@ -25,11 +25,12 @@ main{
     width: 100vw;
 }
 
-section#login{
+section#login{      /* CONFIG DO LOGIN */
     background-color: white;
     width: 260px;
     height: 500px;
     border-radius: 20px;
+    border: 1px solid black;
     position: absolute;
     overflow: hidden;
 
@@ -42,14 +43,15 @@ section#login{
     transition-timing-function: ease;
 }
 
-section#login > div#imagem{
+section#login > div#imagem{     /* CONFIG DA IMAGEM */
     display: block;
     background: #5f2c82 url(../imagens/pattern.jpg) no-repeat ;
     background-size: cover;
     height: 200px;
 }
 
-section#login > div#formulario{
+
+section#login > div#formulario{     /* CONFIG DE FORMULARIO */
     display: block;
     padding: 10px;
 }
@@ -57,24 +59,43 @@ div#formulario > h1{
     text-align: center;
     margin-bottom: 10px;
 }
-
 div#formulario > p{
     font-size: 0.8em;
+    margin-bottom: 20px;
 }
-
 form > div.campo{
     background-color: var(--cor1);
     width: 100%;
     height: 40px;
     display: block;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid var(--cor1);
 }
 
-form label{
-    display: none;
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 8px;
 }
+ 
+div.campo > input {     /* CONFIG DE INPUTS */
+    background-color: #94cfcd;
+    font-size: 1em;
 
+    height: 100%;
+    width: calc( 100% - 42px );
+    padding: 4px;
+
+    border: 0px;
+    border-radius: 8px;
+
+    transform: translate(42px, -42px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+}
 form > input[type=submit] {
     display: block;
     font-size: 1em;
@@ -86,12 +107,10 @@ form > input[type=submit] {
     border-radius: 5px ;
     cursor: pointer;
 }
-
 form > input[type=submit]:hover{
     background-color: #2b6865;
 }
-
-form > a.botao {
+form > a.botao {    /* BOTAO DE ESQUECI SENHA */
     display: block;
     text-align: center;
     font-size: 1em;
@@ -106,11 +125,22 @@ form > a.botao {
     border-radius: 5px;
     cursor: pointer;
 }
-
 a.botao > span{
     font-size: 0.8em;
 }
-
 form > a.botao:hover{
     background-color: white;
+}
+
+/* OUTROS */
+
+#cred{
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+}
+
+form label{
+    display: none;
 }
